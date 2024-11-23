@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>    
+        <title>Contacto | Digi4Klip</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Manuel Aguero" />
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="bloque-top">
+                <figure>
+                    <a href="index.html"><img id="logo" src="imagenes/logo.png"></a>
+                </figure>
+                <button id="secciones-movil">Menu</button>
+                <ul class="secciones">
+                    <li id="inicio" class="categorias">
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <ul id="peliculas" class="categorias">Peliculas
+                            <li>Accion</li>
+                            <li>Musicales</li>
+                            <li><a href="./PelisAnim.html">Animadas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="series" class="categorias">Series
+                            <li><a href="./SSitcom.html">Sitcom</a></li>
+                            <li>Suspenso</li>
+                            <li>Infantiles</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="videojuegos" class="categorias">Videojuegos
+                            <li>Shooter</li>
+                            <li>Deportes</li>
+                            <li><a href="./VJTerror.html">Terror</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="articulos" class="categorias">Articulos
+                            <li>Accesorios</li>
+                            <li><a href="./Moda.html">Moda</a></li>
+                            <li>Juguetes</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <div>
+            <figure class="cuadroform">
+                <h1>Cuentanos tu experiencia con el sitio</h1>
+                <div>
+                    <form id="datos" action="/action_page.php" method="POST" name="formulario" target="_blank">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" style="width: 400px; height: 25px;" required minlength="10" maxlength="30"><br><br>
+                    <label for="correo">E-mail:</label><br>
+                    <input type="text" id="correo" name="correo" style="width: 400px; height: 25px;" required><br><br>
+                    <label for="comentario">Comentarios:</label><br>
+                    <input type="text" id="comentarios" name="comentario" style="width: 400px; height: 200px;" ><br><br>
+                    <button id="form-btn" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </figure>
+        </div>
+        <footer>
+                2024 - <a href="index.html">DIGI4KLIP.COM</a>
+                <br>Made by Manuel Aguero
+        </footer>
+
+        <script src="./logica.js"></script>
+    </body>
+
+
+
+</html>

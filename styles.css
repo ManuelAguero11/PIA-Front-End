@@ -1,0 +1,447 @@
+/* colores
+#0A7373 "aqua"
+#010221 "negro"
+#EAF6FF "blanco"
+#009FFD "azul"
+#FFA400 "naranja"
+*/
+
+@media screen and (min-width: 600px){
+    html{
+        /* background-color:#0A7373; */
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #010221;
+    }
+    
+    body{
+        margin: 0px;
+    }
+    
+    header{
+        background-color: #0A7373;
+        /* position: sticky;
+        top: 10px; */
+    }
+    
+    /* figure {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+    } */
+    
+    #logo{
+        height: 100px;
+    }
+    
+    #bloque-top{
+        /* height: 100%; */
+        display: flex;
+        padding-left: 100px;
+        justify-content: space-between;
+        width: 1200px;
+    } 
+    
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    #secciones-movil{
+        display: none;
+    }
+    
+    .secciones{
+        /* position: relative; */
+        /* overflow: hidden; */
+        /* height: 100%; */
+        /* box-sizing: border-box; */
+        /* text-align: center; */
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .secciones li{
+        color:whitesmoke;
+        font-size: 28px;
+        display: inline;   
+    }
+    
+    .secciones ul{
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        /* margin: ; */
+        /* width: 150px; */
+        /* overflow: hidden; */
+        box-sizing: border-box;
+    }
+    
+    /* .secciones li{
+        display: inline;
+        position: relative; 
+    } */
+    
+    /* .secciones li ul{
+        display: block; 
+        position: relative; 
+    } */
+    
+    /* .secciones li:hover{
+        height: 150px;
+        transition: .5s ease-in-out;
+    } */
+    
+    .categorias{
+        padding: 0px;
+    }
+    
+    .categorias li{
+        color: #010221;
+        padding: 0px; 
+        display: none;
+    }
+    
+    .categorias:hover > li{
+        display: block;
+        height: 150px;
+        /* transition: .5s ease-in-out; */
+    }
+    
+    #contindex{
+        display: flex;
+        justify-content: space-around;  
+    }
+    
+    #contindex #izq{
+        /* display: block; */
+        width: 280px;
+        height: 250px;
+        /* margin-top: 150px; */
+        /* padding-left: 35px;  */
+    }
+    
+    h1, h2{
+        text-align: center;
+    }
+    
+    #contindex #noticias{
+        background-color: #FFA400;
+        width: 250px;
+        height: 500px;
+        padding: 20px;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+        scroll-snap-type: y mandatory; 
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
+    }
+    
+    .news{
+        align-self:center;
+    }
+    
+    .titulo-noticia {
+        margin: 10px;
+        font-size: 36px;
+    }
+    
+    #contindex #sucursales{
+        margin-top: 150px;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    
+    .tiendas{
+        font-size: 32px;
+        color: #009FFD;
+    }
+    
+    #contindex #centro{
+        /* width: 800px; */
+        margin-left: 100px;
+        margin-top: 40px;
+    }
+    
+    #contindex #cntvd{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #cntvd #video{
+        width:480px; 
+        height:280px; 
+        align-self: self-end;
+    }
+    
+    h3, h4{
+        font-size: 38px;
+    }
+
+    #parrafo-form{
+        font-size: 36px;
+    }
+    
+    #contindex #parrB{
+        width: 325px;
+        font-size: 32px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* margin-right: 100px; */
+    }
+    
+    #contindex #prox{
+        padding-top: 150px;
+        font-size: 42px;
+    }
+    
+    .proximamente{
+        border: solid #FFA400;
+        border-width: 25px 40px 25px 40px;
+        border-radius: 5%;
+    }
+    
+    #contindex #contacto{
+        margin-top: 50px;
+    }
+    
+    #contindex #form{
+        font-size: 24px;
+    }
+    
+    footer{
+        background-color: #0A7373;
+        font-size: 32px;
+        text-align: center;
+        color: #EAF6FF;
+        position: relative;
+        bottom: 0px;
+    }
+    
+    .contacto h1{
+        font-size: 32px;
+    }
+    
+    #contacto #form{
+        font-size: 30px;
+    }
+    
+    .cuadroform{
+        width: 800px;
+        height: 600px;
+        font-size: 24px;
+    }
+    
+    .cuadroform h1{
+        font-size: 36px;
+    }
+    
+    .cuadroform #datos{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        max-width: 412px;
+        width: auto;
+        justify-items: center;
+        overflow: scroll;
+    }
+    
+    html{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #010221;
+        width: 412px;
+    }
+
+    body{
+        margin: 0px;
+    }
+
+    header{
+        background-color: #0A7373;
+    }
+
+    #logo{
+        height: 50px;
+        margin-right: 50px;
+    }
+
+    figure{
+
+    }
+
+    #bloque-top{
+        display: flex;
+        justify-content:space-around;
+        width: 412px;
+    }
+
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    .secciones{
+        display: none;
+    }
+
+    #secciones-movil{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #EAF6FF;
+        margin: 25px;
+        font-size: 30px;
+        background-color: #0A7373;
+        border-style: hidden;
+        display: flex;
+        align-self: center;        
+    }
+
+    #secciones-movil.active + .secciones{
+        
+    }
+
+    #contindex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    #contindex #izq{
+        width: 380px;
+        height: 500px;
+    }
+
+    #contindex #cntvd{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contindex #video{
+        width: 350px;
+        height: 200px;
+        display: flex;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    h3, h4{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #parrafo-form{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #contindex #cntvd #parrB{
+        font-size: 28px;
+        text-align: center;
+        margin: 15px;
+    }
+    
+    #contindex #prox{
+        padding: 0px;
+        font-size: 38px;
+    }
+
+    .proximamente{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin: 10px;
+        border: solid #FFA400;
+        border-width: 25px 40px 25px 40px;
+        border-radius: 10%;
+    }
+
+    #contindex #noticias{
+        background-color: #FFA400;
+        width: 250px;
+        height: 900px;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .news{
+        align-self: center;
+    }
+
+    .titulo-noticia{
+        margin: 10px;
+        font-size: 32px;
+    }
+
+    #contindex #sucursales{
+
+    }
+
+    .tiendas{
+        font-size: 28px;
+        color: #009FFD;
+    }
+
+    #contindex #centro{
+        margin: 0px;
+    }
+
+    #contindex #contacto{
+
+    }
+
+    #contindex #form{
+        font-size: 24px;
+    }
+
+    footer{
+        background-color: #0A7373;
+        width: 412px;
+        font-size: 24px;
+        text-align: center;
+        color: #EAF6FF;
+        position: relative;
+        bottom: 0px;
+    } 
+
+    .contacto h1{
+        font-size: 32px;
+    }
+
+    #contacto #form{
+        font-size: 30px;
+    }
+
+    .cuadroform{
+        width: 400px;
+        height: 600px;
+    }
+
+    .cuadroform h1{
+        font-size: 36px;
+    }
+
+    .cuadroform #datos{
+
+    }
+
+}
